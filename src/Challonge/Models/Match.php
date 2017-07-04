@@ -1,9 +1,9 @@
 <?php
 
-namespace Reflex\Challonge\Models;
+namespace Interludic\Challonge\Models;
 
-use Reflex\Challonge\Model;
-use Reflex\Challonge\Helpers\Guzzle;
+use Interludic\Challonge\Model;
+use Interludic\Challonge\Helpers\Guzzle;
 
 class Match extends Model
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Reflex\Challonge\Helpers;
+namespace Interludic\Challonge\Helpers;
 
 use GuzzleHttp\Client;
-use Reflex\Challonge\Exceptions\ServerException;
-use Reflex\Challonge\Exceptions\NotFoundException;
-use Reflex\Challonge\Exceptions\ValidationException;
-use Reflex\Challonge\Exceptions\UnauthorizedException;
-use Reflex\Challonge\Exceptions\InvalidFormatException;
-use Reflex\Challonge\Exceptions\UnexpectedErrorException;
+use Interludic\Challonge\Exceptions\ServerException;
+use Interludic\Challonge\Exceptions\NotFoundException;
+use Interludic\Challonge\Exceptions\ValidationException;
+use Interludic\Challonge\Exceptions\UnauthorizedException;
+use Interludic\Challonge\Exceptions\InvalidFormatException;
+use Interludic\Challonge\Exceptions\UnexpectedErrorException;
 
 class Guzzle
 {
@@ -55,7 +55,7 @@ class Guzzle
     private static function buildHeaders()
     {
         return [
-            'User-Agent' => 'ChallongePHP/' . CHALLONGE_VERSION . ' ChallongePHP (https://github.com/teamreflex/ChallongePHP, ' . CHALLONGE_VERSION . ')'
+            'User-Agent' => 'ChallongePHP/' . CHALLONGE_VERSION . ' ChallongePHP (https://github.com/interludic/ChallongePHP, ' . CHALLONGE_VERSION . ')'
         ];
     }
 

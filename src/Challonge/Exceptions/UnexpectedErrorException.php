@@ -1,6 +1,6 @@
 <?php
 
-namespace Reflex\Challonge\Exceptions;
+namespace Interludic\Challonge\Exceptions;
 
 class UnexpectedErrorException extends \Exception
 {

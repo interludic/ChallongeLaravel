@@ -1,8 +1,8 @@
 <?php
 
-namespace Reflex\Challonge\Models;
+namespace Interludic\Challonge\Models;
 
-use Reflex\Challonge\Model;
+use Interludic\Challonge\Model;
 
 class Participant extends Model
 {
