@@ -1,7 +1,7 @@
 # ChallongeLaravel
 Package for interfacing with the [Challonge] API with Laravel 5.x
 
-##Installation
+## Installation
 
 `composer require interludic/challonge-laravel`
 
@@ -18,7 +18,7 @@ Facade
 ```		 'Challonge' => 'Interludic\Challonge\Facades\Challonge'```
 
 
-##Usage
+## Usage
 
 ```
 
@@ -33,8 +33,9 @@ Facade
 			}
 
 ```
+![Example leaderboard / standings](http://interludic.com.au/assets/img/portfolio/leaderboard.jpg "Example leaderboard / standings")
 
-##TODO
+## TODO
 Config Settings 
 Add support for more than 1 group stage
 
