@@ -1,6 +1,6 @@
 {
-    "name": "interludic/challonge-php",
-    "description": "Unofficial API to interface with the bracket generator Challonge.",
+    "name": "interludic/challonge-laravel",
+    "description": "Unofficial API to interface with the bracket generator Challonge from Laravel.",
     "minimum-stability": "dev",
     "require": {
         "guzzlehttp/guzzle": "^6.0"
