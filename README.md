@@ -11,7 +11,7 @@ update your config\app.php
 
 
 Providers
-```   	Interludic\Challonge\ChallongeServiceProvider::class,````
+```   	Interludic\Challonge\ChallongeServiceProvider::class,```
 
 
 Facade
@@ -36,8 +36,8 @@ Facade
 ![Example leaderboard / standings](http://interludic.com.au/assets/img/portfolio/leaderboard.jpg "Example leaderboard / standings")
 
 ## TODO
-Config Settings 
-Add support for more than 1 group stage
+* Config Settings
+* Add support for more than 1 group stage
 
 
 Interludic - [interludic.com.au](https://interludic.com.au)
