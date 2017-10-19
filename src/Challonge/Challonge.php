@@ -146,7 +146,6 @@ class Challonge
 	public function getMatches($tournament)
 	{
 		$response = Guzzle::get("tournaments/{$tournament}/matches");
-// dd($response);
 		$matches = [];
 		foreach ($response as $match) {
 			$matchModel = new Match($match->match);
@@ -187,7 +186,9 @@ class Challonge
 	public function getStandings($tournament)
 	{
 		$participants = collect($this->getParticipants($tournament));
-		$matches = collect($this->getMatches($tournament));		
+		$matches = collect($this->getMatches($tournament));				
+		$matchesComplete = count($matches->where('state', 'complete'));
+		$result['progress'] = (($matchesComplete > 0) ? round(($matchesComplete / count($matches)*100)) : 0);
 		$group = [];
 
 		foreach ($participants as $team) {

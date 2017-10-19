@@ -24,9 +24,9 @@ Facade
 
 	try {
 				$comp = Challonge::getTournament($challongeId);
-				if((!empty($comp)) && (($comp->state == "complete") || ($comp->state == "underway"))){					
-					// dump($comp);
+				if((!empty($comp)) && (($comp->state == "complete") || ($comp->state == "underway") || ($comp->state == "group_stages_underway"))){					
 					$standings = Challonge::getStandings($challongeId);
+					// $standings['progress'] //Progress of group stage
 				}
 			} catch (Exception $e) {
 				Log::warning('Challonge failed to load standings!', ['challonge'=>$challongeId]);
