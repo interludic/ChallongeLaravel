@@ -74,6 +74,9 @@ class Guzzle
             case 401:
                 throw new UnauthorizedException('Unauthorized (Invalid API key or insufficient permissions)');
                 break;
+            case 403:
+                throw new UnauthorizedException('Forbidden');
+                break;
             case 404:
                 throw new NotFoundException('Object not found within your account scope');
                 break;
@@ -88,7 +91,7 @@ class Guzzle
                 break;
             default:
                 $decodedResponse = json_decode($response->getBody());
-                throw new UnexpectedErrorException($decodedResponse);
+                throw new UnexpectedErrorException("Default challonge error ".$decodedResponse);
                 break;
         }
     }
