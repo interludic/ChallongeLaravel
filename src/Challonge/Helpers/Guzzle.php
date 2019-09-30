@@ -86,6 +86,9 @@ class Guzzle
             case 422:
                 throw new ValidationException('Validation error(s) for create or update method');
                 break;
+            case 429:
+                throw new UnexpectedErrorException('Too many requests');
+                break;
             case 500:
                 throw new ServerException('Something went wrong on Challonge\'s end');
                 break;
