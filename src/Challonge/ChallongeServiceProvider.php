@@ -1,9 +1,8 @@
-<?php namespace Interludic\Challonge;
+<?php
 
-// use PHPChallonge_Settings;
-// use Laravel\Lumen\Application as LumenApplication;
+namespace Interludic\Challonge;
+
 use Illuminate\Support\ServiceProvider;
-use Challonge;
 
 /**
  *
@@ -15,7 +14,8 @@ use Challonge;
  * @author     Interludic <info@Interludic.com.au>
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt    LGPL
  */
-class ChallongeServiceProvider extends ServiceProvider {
+class ChallongeServiceProvider extends ServiceProvider
+{
 
     /**
      * Indicates if loading of the provider is deferred.
@@ -53,7 +53,7 @@ class ChallongeServiceProvider extends ServiceProvider {
         // Bind the Challonge class and inject its dependencies
 
         $this->app->singleton(Challonge::class, function ($app) {
-            return new Challonge(env('CHALLONGE_KEY'));
+            return new Challonge(CHALLONGE_KEY);
         });
 
 
